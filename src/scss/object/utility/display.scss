@@ -1,0 +1,13 @@
+@use "../../foundation/index.scss" as *;
+
+.u-pc-only {
+  @include sp {
+    display: none;
+  }
+}
+
+.u-sp-only {
+  @include pc {
+    display: none;
+  }
+}

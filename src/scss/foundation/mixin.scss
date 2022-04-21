@@ -1,0 +1,15 @@
+$sp: 767px;
+$pc: 768px;
+
+// レスポンシブ
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+// PC版
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
