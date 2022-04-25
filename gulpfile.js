@@ -69,6 +69,7 @@ const compressImage = () => {
 // 表示ブラウザの初期設定
 const browser = () => {
   return browserSync.init({
+    notify: false,
     server: {
       baseDir: "./dist/",
     },
